@@ -1,0 +1,15 @@
+
+.infoContainer:hover #editUserInfo{
+    visibility: visible;
+}
+
+.experienceContainer:hover .editExperienceInfo{
+    visibility: visible;
+}
+
+.editExperienceInfo{
+    visibility: hidden;
+    float: right;
+    margin-top: -4em;
+    color: gray;
+}

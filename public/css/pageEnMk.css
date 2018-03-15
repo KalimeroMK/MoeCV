@@ -1,0 +1,358 @@
+html{
+	min-height: 100vh;
+}
+
+body{
+	background:url(images/bg2.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+ .list{
+	margin: 5% 10% 0% 0%;
+}
+
+ li{
+    border: 2px solid #fff;
+    border-radius: 4px;
+    transition: all .9s ease;
+    margin-left: 15px;
+}
+
+.list li:hover{
+	border-color: #FF9800;
+}
+
+
+
+.list li a{
+	font-size: 18px;
+    color: #fff;
+    padding: 30px;
+    background-color: transparent;
+}
+
+
+.list li a:hover{
+	text-decoration: none;
+	background-color: transparent;
+	color: #FF9800;
+}
+
+
+ ul li:first-child{
+	border: none;
+}
+
+
+img{
+	height: 150px;
+	margin-top: 2%;
+}
+
+
+.text{
+	margin-top: 8%;
+
+}
+
+
+.text h2{
+	color: darkorange;
+	font-size: 1.8em;
+	padding-left: 3%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+	@media (min-width:320px) {
+        /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
+     	
+
+	    .list{
+	     position: absolute;
+		 bottom: 6%;	
+		}
+
+	    img{
+		height: 130px;
+		margin-top: 5%;
+		}
+
+
+		.text{
+		margin-top: 30%;
+
+		}
+
+		.text h2{
+		color: darkorange;
+		font-size: 1.8em;
+		padding-left: 15%;
+		}
+
+
+    }
+
+    
+    @media (min-width:480px) {
+        /* smartphones, Android phones, landscape iPhone 5 */
+
+    	.list{
+	     position: absolute;
+		 bottom: 8%;
+		 left: 20%;	
+		}
+
+	    img{
+		height: 130px;
+		margin-top: 5%;
+		margin-left: 18%;
+		}
+
+
+		.text{
+		margin-top: 14%;
+
+		}
+
+		.text h2{
+		color: darkorange;
+		font-size: 1.8em;
+		padding-left: 14%;
+		}
+
+       
+    }
+
+
+    
+    @media (min-width:600px) {
+        /* portrait tablets, portrait iPad, e-readers (Nook/Kindle) */
+       
+
+        .list{
+	     position: absolute;
+		 bottom: 6%;
+		 left: 26%;	
+		}
+
+	    img{
+		height: 130px;
+		margin-top: 3%;
+		margin-left: 23%;
+		}
+
+
+		.text{
+		margin-top: 20%;
+
+		}
+
+		.text h2{
+		color: darkorange;
+		font-size: 1.7em;
+		padding-left: 6.5%;
+		}
+
+     	
+
+    }
+
+
+    
+    @media only screen and (min-width:600px) and (orientation: landscape) {
+        /*  landscape phones */
+        
+
+        .list{
+	     position: absolute;
+		 bottom: 6%;
+		 left: 26%;	
+		}
+
+	    img{
+		height: 130px;
+		margin-top: 3%;
+		margin-left: 23%;
+		}
+
+
+		.text{
+		margin-top: 20%;
+
+		}
+
+		.text h2{
+		color: darkorange;
+		font-size: 1.7em;
+		padding-left: 6.5%;
+		}
+
+    }
+
+
+    
+    @media (min-width:801px) {
+        /* tablet, landscape iPad, lo-res laptops ands desktops */
+
+       	.list{
+	     position: absolute;
+		 bottom: 10%;
+		 left: 29%;	
+		}
+
+	    img{
+		height: 130px;
+		margin-top: 3%;
+		margin-left: 30%;
+		}
+
+
+		.text{
+		margin-top: 18%;
+
+		}
+
+		.text h2{
+		color: darkorange;
+		font-size: 1.7em;
+		padding-left: 6%;
+		}
+
+
+    }
+
+
+    
+    @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (orientation: portrait) {
+        /* iPad pro portrait*/
+
+        .list{
+	     position: absolute;
+		 bottom: 7%;
+		 left: 35%;	
+		}
+
+	    img{
+		height: 200px;
+		margin-top: 6%;
+		margin-left: 27%;
+		}
+
+
+		.text{
+		margin-top: 18%;
+
+		}
+
+		.text h2{
+		color: darkorange;
+		font-size: 4.5em;
+		padding-left: 12%;
+		}
+
+
+		.list li a{
+		font-size: 38px;
+	    color: #fff;
+	    padding: 30px;
+	    background-color: transparent;
+		}
+
+   
+    }
+
+
+    
+    @media (min-width:1025px) {
+        /* big landscape tablets, laptops, and desktops */
+
+         .list{
+	     position: absolute;
+		 bottom: 8%;
+		 left: 32%;	
+		}
+
+	    img{
+		height: 180px;
+		margin-top: 3%;
+		margin-left: 30%;
+		}
+
+
+		.text{
+		margin-top: 18%;
+
+		}
+
+		.text h2{
+		color: darkorange;
+		font-size: 3em;
+		padding-left: 7%;
+		}
+
+
+		.list li a{
+		font-size: 30px;
+	    color: #fff;
+	    padding: 30px;
+	    background-color: transparent;
+		}
+ 
+	} 
+    
+    
+    @media (min-width:1281px) {
+        /* hi-res laptops and desktops */
+
+        body{
+
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: 100% 100%;
+		}
+
+        .list{
+	     position: absolute;
+		 bottom: 7%;
+		 left: 35%;	
+		}
+
+	    img{
+		height: 100px;
+		margin-top: 0.4%;
+		margin-left: 40%;
+		}
+
+
+		.text{
+		margin-top: 9%;
+
+		}
+
+		.text h2{
+		color: white;
+		font-size: 1.9em;
+		padding-left: 10em;
+		}
+
+
+		.list li a{
+		font-size: 20px;
+	    color: #fff;
+	    padding: 30px;
+	    background-color: transparent;
+		}
+
+     
+     }

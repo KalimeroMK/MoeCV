@@ -1,0 +1,130 @@
+
+.profile-text-container{
+    margin-top: 2em;
+    background-color: #F5CE57;
+    padding: 1em;
+    color: white;
+    overflow-wrap: break-word;
+    border-radius: 0.5em;
+
+}
+
+.question-mark{
+
+    background: url("../../images/help-5.png") no-repeat center;
+    background-size: contain;
+    height: 4em;
+    width: 4em;
+    margin-top: -3em;
+
+}
+
+.profile-image-container{
+    height:14em;
+    width: 14em;
+    border:1em solid white;
+    border-radius: 50%;
+    background: url("../../images/profileimage.png");
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+
+.closeBubbleIcon{
+    margin-left: 1em;
+}
+
+#topThreeSkillsError{
+    display: none;
+}
+
+#additionalSkillsError{
+    display: none;
+}
+
+.easy-autocomplete{
+    width: 100% !important;
+}
+
+.bubble{
+    border-radius: 5px;
+    background-color: #eb5d5c;
+    color: white;
+    font-weight: 700;
+    padding: 1em;
+    margin: 1em;
+    display: inline-block;
+    width: auto;
+}
+
+.m-1{
+    margin: 0.5em;
+}
+
+.profile-icons-container p{
+    font-size: 0.9em;
+    margin-top: 1em;
+}
+
+
+
+.top-three-skills p , .additional-skills p , .top-skills-card-container p{
+    padding: 0.4em;
+    text-align: center;
+    margin: 0.2em;
+    display: inline-block;
+    color: black;
+    font-size: 0.9em;
+    font-weight:700;
+    background-color: #F5CE57;
+    border-radius: 0.2em;
+
+}
+.additional-skills , .top-three-skills{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+.social-icons-container{
+    width: 100%;
+    padding: 0 2em;
+    color: white;
+}
+
+.social-icons-container a{
+    width: 20em;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.social-icons-container i{
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    padding: 0.5em;
+    margin: 0.2em 0;
+}
+
+.social-icons-container i:hover{
+    background-color: #FDC958;
+    color: white;
+}
+
+.social-icons-container .fa-facebook{
+    padding: 0.5em 0.6em;
+}
+
+
+.availability_button{
+    width: 100%!important;
+}
+
+.social_media_button{
+    width: 60%!important;
+    margin-left: 15%;
+}

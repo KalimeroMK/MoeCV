@@ -1,0 +1,289 @@
+html {
+    min-height: 100vh;
+}
+
+body {
+    background-color: #EB5D5C;
+    min-height: 100vh;
+}
+
+.card {
+
+    padding: 2em 2em 5em 5em;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    margin: 2em;
+    border-radius: 10px;
+}
+
+.card form {
+    display: flex;
+    flex-direction: column;
+}
+
+.card .form-group {
+    display: flex;
+    align-items: baseline;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card .form-group input, .card .form-group select {
+    width: 90%;
+}
+
+.card label {
+    margin-right: 2em;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+#addWorkExperienceForm {
+    display: none;
+    position: fixed;
+    right: 5em;
+    bottom: 2em;
+}
+
+.date-container {
+    flex-direction: row;
+}
+
+.form-container input:focus, .form-container textarea:focus, .form-container select:focus {
+    border-color: #F5545A;
+    box-shadow: none;
+    outline: none;
+
+}
+
+#addEducationForm, #addTopThreeSkillsForm, #addAdditionalSkillsForm, #addLanguageForm, #addAccomplishmentsAndProjectsForm {
+
+    display: none;
+    position: fixed;
+    right: 5em;
+    bottom: 3em;
+}
+
+.topThreeItem, .additionalSkillsItem {
+    background-color: #dddddd;
+    padding: 1em;
+    border-radius: 15px;
+    color: gray;
+    margin: 1em 0;
+    font-weight: 700;
+}
+
+.editSkills, .editAdditionalSkills {
+    padding: 0.2em 1em 0.2em 1em;
+    background-color: white;
+    margin-left: 1em;
+    border-radius: 15px;
+    color: #EB5D5C;
+}
+
+.editEducation, .deleteEducation, .editWorkExperience, .deleteWorkExperience, .editSkills, .editAdditionalSkills, .editLanguage, .deleteLanguage, .editProject, .deleteProject {
+    padding: 0.2em 1em 0.2em 1em;
+    background-color: transparent;
+    margin-left: 1em;
+    border-radius: 15px;
+    color: #EB5D5C;
+}
+
+.deleteSkills, .deleteAdditionalSkills {
+    padding: 0.2em 1em 0.2em 1em;
+    background-color: transparent;
+    margin-left: 1em;
+    border-radius: 15px;
+    color: #EB5D5C;
+}
+
+.workExperienceItem, .educationItem, .languageItem, .projectItem {
+    background-color: #dddddd;
+    padding: 1em;
+    border-radius: 15px;
+    color: gray;
+    margin: 1em 0;
+    font-weight: 700;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+#saveAdditionalSkillsButton, #saveEducationButton, #saveTopThreeSkillsButton, #saveWorkExperienceButton, #saveLanguageButton, #saveAccomplishmentsAndProjectsButton {
+
+    background-color: #EB5D5C;
+    box-shadow: none;
+    outline: none;
+    border-color: inherit;
+}
+
+#availableFullTime, #availablePartTime, #availableFreelance {
+    width: 18px;
+    height: 19px;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url(../images/checker.png);
+    background-position: 0 0;
+}
+
+#availableFullTime:checked, #availablePartTime:checked, #availableFreelance:checked {
+    background-image: url(../images/checker.png);
+    background-position: 0 -19px;
+    outline: none;
+}
+
+.workExperienceItem, .educationItem {
+    width: 100%;
+}
+
+.experienceItemText {
+    width: 8em;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+#currentJob {
+    display: none;
+}
+
+#educationOptions {
+    display: none;
+}
+
+#currentJobSpan {
+    display: none;
+}
+
+#educationOptionsSpan {
+    display: none;
+}
+
+@media (min-width: 320px) {
+    /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
+    #addWorkExperienceForm, #addEducationForm, #addTopThreeSkillsForm, #addAdditionalSkillsForm, #addLanguageForm, #addAccomplishmentsAndProjectsForm {
+        margin-top: 5em;
+        right: 0em;
+        bottom: -1em;
+        z-index: 3 ;
+        width: 90vw;
+        height: 100vh;
+        font-size: 14px;
+        overflow: auto;
+        padding-top: 20% !important;
+    }
+
+    .card{
+        padding: 2em 1em 5em 1em;
+        margin: 1em;
+    }
+
+    .date-container {
+        flex-direction: column !important;
+    }
+
+    .editEducation, .deleteEducation, .editWorkExperience, .deleteWorkExperience, .deleteProject {
+        padding: 0.3em 1em;
+        margin-left: 0.3em;
+    }
+
+    .workExperienceItem, .educationItem, .projectItem {
+        margin: 1.8em 0;
+    }
+
+    .deleteSkills, .deleteAdditionalSkills {
+        margin-left: 1em;
+    }
+
+    .additionalSkillsItem {
+
+        font-size: 0.8em;
+    }
+
+    .experienceItemText {
+        width: 4em;
+    }
+
+}
+
+@media (min-width: 480px) {
+    /* smartphones, Android phones, landscape iPhone 5 */
+    .card{
+        padding: 2em 2em 5em 5em;
+        margin: 2em;
+    }
+}
+
+@media (min-width: 600px) {
+    /* portrait tablets, portrait iPad, e-readers (Nook/Kindle) */
+    .date-container {
+        flex-direction: row;
+    }
+
+}
+
+@media only screen and (min-width: 600px) and (orientation: landscape) {
+    /*  landscape phones */
+    #addWorkExperienceForm, #addEducationForm, #addTopThreeSkillsForm, #addAdditionalSkillsForm, #addLanguageForm, #addAccomplishmentsAndProjectsForm {
+        right: -2em;
+        top: -2em;
+        width: 100vw;
+        height: 100vh;
+        font-size: 14px;
+        overflow: auto;
+
+    }
+
+    .date-container {
+        flex-direction: row;
+    }
+
+}
+
+@media (min-width: 801px) {
+    /* tablet, landscape iPad, lo-res laptops ands desktops */
+    #addWorkExperienceForm, #addEducationForm, #addTopThreeSkillsForm, #addAdditionalSkillsForm, #addLanguageForm, #addAccomplishmentsAndProjectsForm {
+        right: 1em;
+        /*top: 0.5em;*/
+        width: 40vw;
+        height: 90vh;
+        font-size: 14px;
+        overflow: hidden;
+        padding-top: 2% !important;
+    }
+
+    #addTopThreeSkillsForm, #addAdditionalSkillsForm {
+        overflow: auto;
+    }
+
+    .additionalSkillsItem {
+        font-size: 1em;
+    }
+
+    .date-container {
+        flex-direction: row !important;
+    }
+
+}
+
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (orientation: portrait) {
+
+    /* iPad pro portrait*/
+
+}
+
+@media (min-width: 1025px) {
+    /* big landscape tablets, laptops, and desktops */
+
+}
+
+@media (min-width: 1281px) {
+    /* hi-res laptops and desktops */
+
+}

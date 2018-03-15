@@ -1,0 +1,65 @@
+.profile-header{
+    height: 15em;
+    padding: 2em;
+    background-color: #FDC958;
+}
+
+.p-0{
+    padding: 0;
+}
+
+.profile-header-text{
+    font-size: 2em;
+    width: 50%;
+    color: white;
+    font-style: italic;
+}
+
+.quote-left , .quote-right{
+    color: white !important;
+    opacity: 0.5 !important;
+    /*padding: 1em !important;*/
+}
+.quote-left{
+    align-self: flex-start;
+}
+
+.quote-right{
+    align-self: flex-end;
+}
+
+
+
+.editHeader{
+    visibility: hidden;
+    position: absolute;
+    background: whitesmoke;
+    border-radius: 50%;
+    color: #FDC958;
+    height: 5em;
+    width: 5em;
+    font-size: 2em;
+    font-weight: 700;
+
+}
+
+.navbar-inverse .navbar-toggle{
+    border-color: transparent !important;
+}
+
+.navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover{
+    background-color: transparent !important;
+}
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form{
+    border-color: transparent !important;
+}
+
+
+@media (min-width: 320px) and (max-width: 480px){
+    .profile-header-text{
+        font-size: 1em;
+    }
+    .quote-left , .quote-right {
+        font-size: 2em;
+    }
+}

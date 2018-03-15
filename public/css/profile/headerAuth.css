@@ -1,0 +1,7 @@
+.profile-header:hover .profile-header-text{
+    opacity: 0.5;
+}
+
+.profile-header:hover .editHeader{
+    visibility: visible;
+}

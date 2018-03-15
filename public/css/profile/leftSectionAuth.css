@@ -1,0 +1,27 @@
+/*.edit-icon-container{*/
+    /*visibility: hidden;*/
+    /*position: absolute;*/
+    /*color: white;*/
+    /*font-weight: 700;*/
+    /*border-radius: 50%;*/
+    /*width: 5em;*/
+    /*height: 5em;*/
+    /*top: 13em;*/
+    /*background-color: #FDC958;*/
+/*}*/
+
+/*.profile-icons-container:hover .edit-icon-container{*/
+    /*visibility: visible;*/
+/*}*/
+/*.profile-icons-container:hover .icon-container{*/
+    /*opacity: 0.1;*/
+
+/*}*/
+.pointer:hover{
+    cursor: pointer;
+}
+
+.profile-image-container:hover{
+    cursor: pointer;
+    opacity: 0.5;
+}
